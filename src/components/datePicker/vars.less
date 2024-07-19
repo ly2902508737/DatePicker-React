@@ -1,0 +1,55 @@
+@prefix-cls: date-picker;
+@primary-color: #31c27c;
+@border-color: #e8e8e8;
+@font-color: rgba(0, 0, 0, 0.65);
+@border-radius: 4px;
+@font-size: 14px;
+@bg-color: #fafafa;
+@default-shadow: 0 4px 22px 0 rgba(15, 35, 95, 0.12);
+@default-section-shadow: 0 1px 4px 0 rgba(15, 35, 95, 0.12);
+@default-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+@disabled-color: #f5f5f5;
+@disabled-font-color: fade(@font-color, 25%);
+
+@date-picker-z-index: 88;
+@date-picker-content-height: 470px;
+@date-picker-content-width: 322px;
+@date-picker-content-max-width: 400px;
+@date-picker-day-width: 36px;
+@date-picker-day-height: 36px;
+@date-picker-day-offset: 0 4px 4px 0;
+@date-picker-padding: 15px 20px;
+@date-picker-offset-top: 5px;
+
+//Input 输入框
+@input-height: 40px;
+@input-height-large: 50px;
+@input-height-small: 30px;
+@input-padding: 4px 10px;
+@input-box-shadow: 0 0 0 2px fade(@primary-color, 20%);
+@input-prefix-offset: 12px;
+@input-suffix-offset: 12px;
+
+@default-transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@keyframes date-picker-open {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes date-picker-close {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+}

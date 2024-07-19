@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5", // 将ES6语法编译为ES5语法
+        "module": "commonjs", // 将ES6模块编译为CommonJS模块
+        "moduleResolution": "node", // 使用Node.js的模块解析规则
+        "jsx": "react",
+        "declaration": false, // 打包后是否还保留类型文件
+        "sourceMap": false, // 打包后是否生成sourceMap文件
+        "strict": true, // 开启严格模式
+        "esModuleInterop": true, // 兼容babel
+        "noUnusedLocals": true, // 禁止未使用的变量会报错
+        "noUnusedParameters": true, // 有未使用的参数报错
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
